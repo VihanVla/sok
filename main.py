@@ -1,7 +1,7 @@
 from checkOnline import checkOnline
 from Input import allinputs
 
-allinputs.ipInput()
 
-for ip_address in allinputs.IPlist :
-    checkOnline.check_online(ip_address, 443)
+allinputs.ipgetter.ipInput()
+for ip in allinputs.IPlist:
+    checkOnline.onlineChecker.check_online(ip,443)
