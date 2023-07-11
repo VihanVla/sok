@@ -1,6 +1,5 @@
 import socket
 import port.portScan as portScan
-from Input import allinputs
 s = None
 
 def check_online(ip_address, port):
@@ -10,7 +9,7 @@ def check_online(ip_address, port):
         s.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
         s.connect((ip_address, port))
         print(f"{ip_address}:{port} online")
-        for port in 
+    
         portScan.checkPort(ip_address, port)
     except WindowsError:
         print("offline")
